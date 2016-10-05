@@ -20,8 +20,7 @@ class Category {
   String id;
 
   Category(RouteParams routeParams) {
-    var categoryId = routeParams.get('category');
-    var category = categoryData.where((c) => c['id'] == categoryId).first;
+    var category = categoryData.where((c) => c['id'] == 'smartphones').first;
     name = category['name'];
     id = category['id'];
     products = category['products'];

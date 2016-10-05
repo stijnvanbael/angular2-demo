@@ -11,9 +11,8 @@ class Product {
   String image;
 
   Product(RouteParams routeParams) {
-    var categoryId = routeParams.get('category');
     var productId = routeParams.get('product');
-    var product = categoryData.where((c) => c['id'] == categoryId).first['products'].where((p) => p['id'] == productId).first;
+    var product = categoryData.where((c) => c['id'] == 'smartphones').first['products'].where((p) => p['id'] == productId).first;
     name = product['name'];
     image = product['image'];
   }

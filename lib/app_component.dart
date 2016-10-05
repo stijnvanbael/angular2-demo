@@ -16,7 +16,7 @@ import 'package:angular2_demo/empty.dart';
     providers: const [ROUTER_PROVIDERS])
 @RouteConfig(const [
   const Route(path: '/', name: 'Empty', component: Empty, useAsDefault: true),
-  const Route(path: '/categories/:category/...', name: 'Category', component: Category)
+  const Route(path: '/categories/...', name: 'Category', component: Category)
 ])
 class AppComponent {
   List<Map> categories = categoryData;
