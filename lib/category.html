@@ -4,7 +4,7 @@
 
 <ul>
     <li *ngFor="let product of products">
-        <a [routerLink]="['Category/Product', {'category': id, 'product': product['id']}]">{{product['name']}}</a>
+        <a [routerLink]="['/Category', {'category': id}, 'Product', {'product': product['id']}]">{{product['name']}}</a>
     </li>
 </ul>
 
