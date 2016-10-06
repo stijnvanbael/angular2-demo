@@ -8,8 +8,7 @@ import 'package:angular2_demo/product.dart';
 
 @Component(selector: 'category',
     templateUrl: 'category.html',
-    directives: const [ROUTER_DIRECTIVES, NgFor],
-    providers: const [ROUTER_PROVIDERS])
+    directives: const [ROUTER_DIRECTIVES, NgFor])
 @RouteConfig(const [
   const Route(path: '/', name: 'Empty', component: Empty, useAsDefault: true),
   const Route(path: '/products/:product', name: 'Product', component: Product)
